@@ -41,7 +41,8 @@ test("@e2e", async ({ page }) => {
   await expect(page.locator("a.list-group-item.active")).toHaveText(
     " Володимир Борисович (Тест) "
   );
-  await page.pause();
+  // for debug
+  // await page.pause();
 });
 
 test("@e2e will pass but not valid", async ({ page }) => {
@@ -80,5 +81,6 @@ test("@e2e will pass but not valid", async ({ page }) => {
   await expect(page.locator("a.list-group-item.active")).toHaveText(
     " Володимир Борисович (Тест) "
   );
-  await page.pause();
+  // for debug
+  // await page.pause();
 });
